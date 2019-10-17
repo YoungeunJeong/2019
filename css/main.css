@@ -87,7 +87,7 @@ header {
     margin-right: auto;
     position: relative;
     left:200px;
-    top:-200px;
+    top:-130px;
     z-index: 99;
 
    
@@ -105,7 +105,7 @@ header {
 .product-item1{
     position: relative;
     display: block;
-    top: -665px;
+    top: -600px;
     right: -470px;
     z-index: 999;
     margin:0;
@@ -116,7 +116,7 @@ header {
 .product-item2{
     position: relative;
     display: block;
-    top:-885px;
+    top:-820px;
     left:713px;
     z-index: 998;
 
@@ -124,7 +124,7 @@ header {
 .product-item3{
     position: relative;
     display: block;
-    top:-1105px;
+    top:-1040px;
     left:957px;
     z-index: 997;
 
@@ -132,15 +132,16 @@ header {
 .product-item4{
     position: relative;
     display: block;
-    top: -1105px;
+    top: -1040px;
     left: 225px;
     z-index: 1000;
 
 }
+
 .product-item5{
     position: relative;
     display: block;
-    top:-1325px;
+    top:-1260px;
     left:470px;
     z-index: 1000;
 
@@ -148,7 +149,7 @@ header {
 .product-item6{
     position: relative;
     display: block;
-    top: -1545px;
+    top: -1480px;
     left: 713px;
     z-index: 999;
 
@@ -156,7 +157,7 @@ header {
 .product-item7{
     position: relative;
     display: block;
-    top: -1765px;
+    top: -1700px;
     left: 957px;
     z-index: 999;
 
