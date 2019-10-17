@@ -12,7 +12,16 @@
 <script src="js/jquery.bxslider.js"></script>
 
     
-
+<script>
+        $(document).ready(function(){
+            $('.slider').bxSlider({
+                nextText:'<img src="images/button_next.png">',
+                prevText:'<img src="images/button_prev.png">',
+                pager: false
+            });
+        });
+        
+</script>
 <script>
 // 이미지 마우스오버 
 $(function(){
@@ -86,15 +95,6 @@ $(function(){
         </div> 
     </div>
 
-<script>
-    $(document).ready(function(){
-        $('.slider').bxSlider({
-            nextText:'<img src="images/button_next.png">',
-            prevText:'<img src="images/button_prev.png">',
-            pager: false
-        });
-    });
-    
-</script>
+
 </body>
 </HTML>
