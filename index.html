@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<HTML lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>evergrow</title>
+<link rel="stylesheet" href="css/main.css">
+
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+<link href="css/jquery.bxslider.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/jquery.bxslider.js"></script>
+
+    
+
+<script>
+// 이미지 마우스오버 
+$(function(){
+    $('.mouseover').each(function(){
+        var src_off = $(this).find('img').attr('src');
+        var src_on = src_off.replace('_off.png','_on.png');
+        $('<img />').attr('src',src_on);
+        $(this).hover(function(){
+            $(this).find('img').attr('src',src_on);
+        },function(){
+            $(this).find('img').attr('src',src_off);
+        }); 
+    });
+});
+
+</script>
+</head>
+
+<body>
+
+    <header>
+
+        <ul class="nav-links">
+            <li class="logo-pd">
+                <a href="#"><img src="images/logo.png" alt=""></a>
+            </li>
+            <li class="pd">
+                <a href="#"> company </a>
+            </li>
+            <li class="pd">
+                <a href="#"> technology </a>
+            </li>
+            <li class="pd">
+                <a href="#"> product </a>
+            </li>
+            <li class="pd">
+                <a href="#"> support </a>
+            </li>
+            <li>
+                <span class="lang">
+                    <a href="#" class="unchecked"> ko</a><span class="lang-dt"> |</span>
+                    <a href="#" class="checked"> en</a><span class="lang-dt"> |</span>
+                    <a href="#" class="unchecked"> jp</a>
+                </span>
+            </li>
+        </ul>
+
+    </header>
+    <!-- 슬라이더 영역 -->
+    <div class="slider">
+            <img src="images/Main_01.png">
+            <img src="images/Main_02.png">
+            <img src="images/Main_03.png">
+    </div>
+
+
+
+    <div class="mid">
+        <div class="product">
+            <img src="images/Main_product01_03.png" alt="main_product">
+        </div>
+        <div class="product-items">
+        
+                <a href="#" class="mouseover"><img class="product-item1" src="images/product01_off.png" alt=""/></a>
+                <a href="#" class="mouseover"><img class="product-item2" src="images/product02_off.png" alt=""/></a>
+                <a href="#" class="mouseover"><img class="product-item3" src="images/product03_off.png" alt=""/></a>
+                <a href="#" class="mouseover"><img class="product-item4" src="images/product04_off.png" alt=""/></a>
+                <a href="#" class="mouseover"><img class="product-item5" src="images/product05_off.png" alt=""/></a>
+                <a href="#" class="mouseover"><img class="product-item6" src="images/product06_off.png" alt=""/></a>
+                <a href="#"><img class="product-item7" src="images/product_07_on.png" alt=""></a>
+        </div> 
+    </div>
+
+<script>
+    $(document).ready(function(){
+        $('.slider').bxSlider({
+            nextText:'<img src="images/button_next.png">',
+            prevText:'<img src="images/button_prev.png">',
+            pager: false
+        });
+    });
+</script>
+</body>
+</HTML>
